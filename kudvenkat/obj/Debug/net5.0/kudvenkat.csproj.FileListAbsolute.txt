@@ -1,0 +1,16 @@
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.exe
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.deps.json
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.runtimeconfig.json
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.runtimeconfig.dev.json
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.dll
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\ref\kudvenkat.dll
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\bin\Debug\net5.0\kudvenkat.pdb
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.csprojAssemblyReference.cache
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.AssemblyInfoInputs.cache
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.AssemblyInfo.cs
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.csproj.CoreCompileInputs.cache
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.dll
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\ref\kudvenkat.dll
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.pdb
+C:\Kesava\Practice\CSharp\kudvenkat\kudvenkat\obj\Debug\net5.0\kudvenkat.genruntimeconfig.cache
