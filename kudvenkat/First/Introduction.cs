@@ -17,7 +17,7 @@ namespace kudvenkat.First
             Console.WriteLine("Welcome to C# Tutorials");
             first1();
         }
-        
+
         private void first1()
         {
             Console.WriteLine("This function is called from main");
@@ -73,15 +73,15 @@ namespace kudvenkat.First
             int num1 = 1;
             int num2 = 3;
             //Arithmetic Operator +, -, *, /, %
-            Console.WriteLine(num1+num2*num1-num2/num1);
+            Console.WriteLine(num1 + num2 * num1 - num2 / num1);
             //Comparision Operator ==, !=, >, >=, <, <=
-            if (num1 >= num2 && num1<=num2)
+            if (num1 >= num2 && num1 <= num2)
             {
                 Console.WriteLine(true);
             }
             //Conditional Operator &&, ||
             //Ternary Operator ?:
-            Console.WriteLine(num1<num2?true:false);
+            Console.WriteLine(num1 < num2 ? true : false);
             //Null Coalescing Operator ??
         }
         #endregion
@@ -102,7 +102,7 @@ namespace kudvenkat.First
         public void sixth()
         {
             bool? AreYouMajor = null;
-            if(AreYouMajor == true)
+            if (AreYouMajor == true)
             {
                 Console.WriteLine("I am a major");
             }
@@ -127,7 +127,7 @@ namespace kudvenkat.First
             int? ticketsonsalee = null;
             int availableticketss;
 
-            if(ticketsonsalee==null)
+            if (ticketsonsalee == null)
             {
                 availableticketss = 0;
             }
@@ -260,7 +260,7 @@ namespace kudvenkat.First
             {
                 Console.WriteLine("Your Number Is Three");
             }
-            if(userInput != 1 && userInput != 2 && userInput != 3)
+            if (userInput != 1 && userInput != 2 && userInput != 3)
             {
                 Console.WriteLine("Your Number is not 1, 2, 3");
             }
@@ -343,7 +343,7 @@ namespace kudvenkat.First
             int target = int.Parse(Console.ReadLine());
             int start = 0;
 
-            while(start <= target)
+            while (start <= target)
             {
                 Console.WriteLine(start);
                 start++;
@@ -384,7 +384,7 @@ namespace kudvenkat.First
          */
         public void fifteenth()
         {
-            for(int i=0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine(i);
             }
@@ -394,12 +394,12 @@ namespace kudvenkat.First
             Numbers[1] = 53;
             Numbers[2] = 35;
 
-            for(int i=0; i<Numbers.Length; i++)
+            for (int i = 0; i < Numbers.Length; i++)
             {
                 Console.WriteLine(Numbers[i]);
             }
 
-            foreach(int j in Numbers)
+            foreach (int j in Numbers)
             {
                 Console.WriteLine(j);
             }
@@ -437,7 +437,7 @@ namespace kudvenkat.First
 
         public void evenNumbers(int num_passed)
         {
-            for(int i=0; i<num_passed; i += 2)
+            for (int i = 0; i < num_passed; i += 2)
             {
                 Console.WriteLine(i);
             }
@@ -543,7 +543,7 @@ namespace kudvenkat.First
         {
             Console.WriteLine("There are {0} elements", nums.Length);
 
-            foreach(int j in nums)
+            foreach (int j in nums)
             {
                 Console.WriteLine(j);
             }
@@ -707,7 +707,7 @@ namespace kudvenkat.First
             employee23s[2] = new FullTimeEmployee23();
             employee23s[3] = new TempTimeEmployee23();
 
-            foreach(Employee23 e in employee23s)
+            foreach (Employee23 e in employee23s)
             {
                 e.PrintFullName();
             }
@@ -749,6 +749,81 @@ namespace kudvenkat.First
             Console.WriteLine("Sum is: " + sum);
         }
         #endregion
+
+        #region TwentySix
+        /*
+         * Properties - getter and setter methods before properties
+         */
+        public void twentySix()
+        {
+            Student26 s26 = new Student26();
+            s26.SetId(5);
+            Console.WriteLine(s26.GetId());
+        }
+        #endregion
+
+        #region TwentySeven
+        /*
+         * Properties
+         */
+        public void twentySeven()
+        {
+            Student27 s27 = new Student27();
+            s27.id = 5;
+            Console.WriteLine(s27.id);
+        }
+        #endregion
+
+        #region TwentyEight
+        /*
+         * Structs
+         */
+        public void twentyEight()
+        {
+            Customer28 c28_1 = new Customer28(1, "Lakshmi");
+            c28_1.printDetails();
+
+            Customer28 c28_2 = new Customer28();
+            c28_2.id = 2;
+            c28_2.name = "Kesava";
+            c28_2.printDetails();
+
+            Customer28 c28_3 = new Customer28
+            {
+                id = 3,
+                name = "Indla"
+            };
+            c28_3.printDetails();
+        }
+        #endregion
+
+        #region TwentyNine
+        /*
+         * Class vs Struct
+         * https://www.dotnetodyssey.com/2014/06/06/beginners-guide-value-reference-types-c/
+         */
+        public void twentyNine()
+        {
+            Console.WriteLine("Check the Images doc");
+        }
+        #endregion
+
+        #region Thirty
+        /*
+         * Interfaces
+         */
+        public void thirty()
+        {
+            Customer_30 c_30 = new Customer_30();
+            c_30.print1();
+            c_30.print2();
+
+            //We cannot create an instance of an interface, but an interface reference variable can point to 
+            //a derived class object
+            ICustomer30 ic_30 = new Customer_30();
+            ic_30.print1();
+        }
+        #endregion
     }
 
     #region Nineteenth
@@ -758,7 +833,7 @@ namespace kudvenkat.First
         string _LastName;
 
         public Customer() : this("No first name provided", "No last name provided")
-        {   
+        {
         }
 
         //Customer method below is the constructor
@@ -770,7 +845,7 @@ namespace kudvenkat.First
 
         public void printName()
         {
-            Console.WriteLine("Full Name is:"+this._firstName+ ", " + this._LastName);
+            Console.WriteLine("Full Name is:" + this._firstName + ", " + this._LastName);
         }
 
         //Usually destructors are used to cleanup the resources used, but in C# you don't need them.
@@ -793,7 +868,7 @@ namespace kudvenkat.First
         static float _PI = 3.141F;
         int _Radius;
 
-        public Circle (int Radius)
+        public Circle(int Radius)
         {
             this._Radius = Radius;
         }
@@ -952,8 +1027,145 @@ namespace kudvenkat.First
         }
     }
     #endregion
-}
 
+    #region TwentySix
+    public class Student26
+    {
+        private int _id;
+        private string _name;
+        private int _passMark;
+
+        public void SetId(int id)
+        {
+            if (id <= 0)
+            {
+                throw new Exception("Student id should be greater than zero");
+            }
+            this._id = id;
+        }
+
+        public int GetId()
+        {
+            return this._id;
+        }
+
+        public string getName()
+        {
+            return string.IsNullOrEmpty(this._name) ? "No Name" : this._name;
+        }
+    }
+    #endregion
+
+    #region TwentySeven
+    /*
+     * Properties - getter and setter methods before properties
+     */
+    public class Student27
+    {
+        private int _id;
+        private string _name;
+        private int _passMark;
+
+        public int id
+        {
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("Student id cannot be negative");
+                }
+                this._id = value;
+            }
+
+            get
+            {
+                return this._id;
+            }
+        }
+
+        //read-only property
+        public int passMark
+        {
+            get
+            {
+                return this._passMark;
+            }
+        }
+
+        //Auto Implemented properties
+        //This is no where related to _name field, because C# automatically creates a new private field "name"
+        public string name
+        {
+            set;
+            get;
+        }
+
+        //Auto implemented properties creates a new private field.
+        public string emailId
+        {
+            set;
+            get;
+        }
+
+        public string city { get; set; }
+    }
+    #endregion
+
+    #region TwentyEight
+    public struct Customer28
+    {
+        private int _id;
+        private string _name;
+
+        public int id
+        {
+            get { return this._id; }
+            set { this._id = value; }
+        }
+
+        //Created using refactoring by right clicking
+        public string name { get => _name; set => _name = value; }
+
+        //Struct Constructor
+        public Customer28(int Id, String Name)
+        {
+            this._id = Id;
+            this._name = Name;
+        }
+
+        //Struct Method
+        public void printDetails()
+        {
+            Console.WriteLine("Id={0} && Name={1}", this._id, this._name);
+        }
+    }
+    #endregion
+
+    #region Thirty
+    interface ICustomer30
+    {
+        void print1();
+    }
+
+    interface ICustomer30_2 : ICustomer30
+    {
+        void print2();
+    }
+
+    public class Customer_30 : ICustomer30_2
+    {
+        public void print1()
+        {
+            Console.WriteLine("Interface1 method implemented");
+        }
+
+        public void print2()
+        {
+            Console.WriteLine("Interface2 method implemented");
+        }
+    }
+    #endregion
+}
 
 #region Tutorial-18 Namespaces
 namespace ProjectA

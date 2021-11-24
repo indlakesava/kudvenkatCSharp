@@ -133,6 +133,31 @@ namespace kudvenkat
                     introduction25.add(3, 5);
                     introduction25.add(3.5f, 5.3f);
                     break;
+                //Properties
+                case 26:
+                    Introduction introduction26 = new Introduction();
+                    introduction26.twentySix();
+                    break;
+                //Properties
+                case 27:
+                    Introduction introduction27 = new Introduction();
+                    introduction27.twentySeven();
+                    break;
+                //Structs
+                case 28:
+                    Introduction introduction28 = new Introduction();
+                    introduction28.twentyEight();
+                    break;
+                //Class vs Struct
+                case 29:
+                    Introduction introduction29 = new Introduction();
+                    introduction29.twentyNine();
+                    break;
+                //Interfaces
+                case 30:
+                    Introduction introduction30 = new Introduction();
+                    introduction30.thirty();
+                    break;
                 default:
                     Console.WriteLine("Input case not found");
                     break;
